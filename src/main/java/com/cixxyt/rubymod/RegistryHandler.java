@@ -1,5 +1,6 @@
 package com.cixxyt.rubymod;
 
+import com.cixxyt.rubymod.blocks.BlockItemBase;
 import com.cixxyt.rubymod.blocks.RubyBlock;
 import com.cixxyt.rubymod.items.ItemBase;
 import net.minecraft.block.Block;
@@ -25,5 +26,8 @@ public class RegistryHandler {
 
     // Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
+
+    // Block Items
+    public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
 
 }
