@@ -1,5 +1,6 @@
 package com.cixxyt.rubymod;
 
+import com.cixxyt.rubymod.blocks.RubyBlock;
 import com.cixxyt.rubymod.items.ItemBase;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
